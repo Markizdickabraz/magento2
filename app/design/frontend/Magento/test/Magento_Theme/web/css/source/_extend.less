@@ -1,0 +1,25 @@
+.custom-animation {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border-radius: 10px;
+  animation: pulseMove 2s infinite alternate ease-in-out;
+}
+
+@keyframes pulseMove {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 10px rgba(255, 65, 108, 0.5);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 75, 43, 0.7);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 10px rgba(255, 65, 108, 0.5);
+  }
+}
