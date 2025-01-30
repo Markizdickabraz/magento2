@@ -1,0 +1,52 @@
+### Magento 2 Git Ignore ###
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Ignore node and vendor dependencies
+node_modules/
+vendor/
+
+# Ignore compiled and generated files
+generated/
+var/
+pub/static/
+pub/media/
+
+# Ignore environment-specific files
+app/etc/env.php
+app/etc/config.php
+
+# Ignore logs and reports
+var/log/
+var/report/
+var/cache/
+var/page_cache/
+var/view_preprocessed/
+
+# Ignore PHPUnit & Composer files
+phpunit.xml
+auth.json
+composer.lock
+
+# Ignore deployment & backup files
+*.tar.gz
+*.zip
+*.bak
+*.swp
+*.swo
+
+# Ignore local Docker and Vagrant files
+/.docker/
+/.vagrant/
+
+# Ignore session storage
+var/session/
+
+# Ignore custom themes static content
+theme-frontend-*/web/css/
+theme-frontend-*/web/js/
